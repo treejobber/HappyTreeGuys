@@ -1684,7 +1684,7 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   background: var(--clr-white);
-  transition: background-color 0.8s ease;
+  transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 0;
 }
 
@@ -1731,7 +1731,8 @@ ul { list-style: none; }
 /* Rotator container */
 .ghero__rotator {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
   min-width: 5ch;
   height: 1.15em;
   vertical-align: baseline;
@@ -1740,17 +1741,24 @@ ul { list-style: none; }
 .ghero__slide {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(18px);
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   white-space: nowrap;
+  pointer-events: none;
 }
 
 .ghero__slide--active {
   opacity: 1;
-  transform: translateY(0);
-  position: relative;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.ghero__slide--exit {
+  opacity: 0;
+  transform: translateX(-50%) translateY(-18px);
 }
 
 /* The rotating word with colored background */
@@ -1779,16 +1787,12 @@ ul { list-style: none; }
 /* "Guys" box — like the "Ads" box in the Google reference */
 .ghero__box {
   display: inline-block;
-  padding: 0.05em 0.3em;
-  border-radius: 0.12em;
-  background: var(--clr-brand);
-  color: var(--clr-white);
-  transition: background-color 0.5s ease;
+  transition: color 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ghero[data-theme="green"] .ghero__box  { background: var(--clr-brand); }
-.ghero[data-theme="amber"] .ghero__box  { background: #d4a03c; }
-.ghero[data-theme="white"] .ghero__box  { background: var(--clr-gray-900); }
+.ghero[data-theme="green"] .ghero__box  { color: var(--clr-brand); }
+.ghero[data-theme="amber"] .ghero__box  { color: #d4a03c; }
+.ghero[data-theme="white"] .ghero__box  { color: var(--clr-gray-900); }
 
 /* Circle — stacked below headline, centered */
 .ghero__circle {
@@ -1798,7 +1802,7 @@ ul { list-style: none; }
   border-radius: 50%;
   background: rgba(0,0,0,0.04);
   overflow: hidden;
-  transition: background-color 0.8s ease;
+  transition: background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
   margin: var(--sp-10) auto;
   flex-shrink: 0;
 }
@@ -1814,8 +1818,9 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: scale(0.95);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ghero__circle-img--active {

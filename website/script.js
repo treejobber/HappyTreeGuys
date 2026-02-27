@@ -250,16 +250,24 @@
     var gheroTotalSlides = gheroSlides.length;
 
     function gheroGoTo(index) {
-      // Remove active from current
-      gheroSlides[gheroCurrentSlide].classList.remove('ghero__slide--active');
-      if (gheroCircleImgs[gheroCurrentSlide]) {
-        gheroCircleImgs[gheroCurrentSlide].classList.remove('ghero__circle-img--active');
-      }
+      var prev = gheroCurrentSlide;
 
       gheroCurrentSlide = index;
       if (gheroCurrentSlide >= gheroTotalSlides) gheroCurrentSlide = 0;
 
-      // Add active to new
+      // Exit animation on old slide
+      gheroSlides[prev].classList.remove('ghero__slide--active');
+      gheroSlides[prev].classList.add('ghero__slide--exit');
+      if (gheroCircleImgs[prev]) {
+        gheroCircleImgs[prev].classList.remove('ghero__circle-img--active');
+      }
+
+      // Clean up exit class after transition
+      setTimeout(function () {
+        gheroSlides[prev].classList.remove('ghero__slide--exit');
+      }, 700);
+
+      // Enter animation on new slide
       var activeSlide = gheroSlides[gheroCurrentSlide];
       activeSlide.classList.add('ghero__slide--active');
       if (gheroCircleImgs[gheroCurrentSlide]) {
