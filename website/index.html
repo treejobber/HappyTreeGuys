@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Tree Guys | Professional Tree Service</title>
+  <meta name="description" content="Happy Tree Guys — trusted local tree service. Tree removal, trimming, stump grinding & emergency storm cleanup. ISA Certified. Free estimates. 5-star rated.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Niveau Grotesk';
+      src: url('fonts/HvDTrial_NiveauGroteskMedium.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Niveau Grotesk';
+      src: url('fonts/HvDTrial_NiveauGroteskBold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Niveau Grotesk';
+      src: url('fonts/HvDTrial_NiveauGroteskBlack.otf') format('opentype');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- STICKY NAV                                         -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon">🌳</span>
+        <span class="nav__logo-text">Happy Tree Guys</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav__cta-group">
+        <a href="tel:+15551234567" class="nav__phone">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          (555) 123-4567
+        </a>
+        <a href="#estimate" class="btn btn--primary nav__btn">Free Estimate</a>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- GOOGLE ADS-STYLE ROTATING HERO (TEST)              -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="ghero" id="ghero">
+    <div class="ghero__bg"></div>
+    <div class="ghero__content">
+      <div class="ghero__headline">
+        <span class="ghero__static">Get</span>
+        <span class="ghero__rotator" id="gheroRotator">
+          <span class="ghero__slide ghero__slide--active" data-bg="green">
+            <span class="ghero__word">better care</span>
+          </span>
+          <span class="ghero__slide" data-bg="amber">
+            <span class="ghero__word">expert trimming</span>
+          </span>
+          <span class="ghero__slide" data-bg="white">
+            <span class="ghero__word">safe removal</span>
+          </span>
+        </span>
+      </div>
+      <div class="ghero__headline ghero__headline--line2">
+        <span class="ghero__static">with Happy Tree</span>
+        <span class="ghero__box" id="gheroBox">Guys</span>
+      </div>
+
+      <!-- Circle image — stacked below headline -->
+      <div class="ghero__circle" id="gheroCircle">
+        <div class="ghero__circle-img ghero__circle-img--active" data-slide="0">
+          <div class="ghero__circle-placeholder">
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" opacity="0.4">
+              <path d="M32 56V32"/><path d="M20 32l12-20 12 20H20z"/><path d="M16 44l16-28 16 28H16z"/>
+            </svg>
+            <small>Tree Care</small>
+          </div>
+        </div>
+        <div class="ghero__circle-img" data-slide="1">
+          <div class="ghero__circle-placeholder">
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" opacity="0.4">
+              <path d="M32 56V28"/><path d="M22 28c0-12 10-20 10-20s10 8 10 20"/>
+              <line x1="26" y1="18" x2="20" y2="12"/><line x1="38" y1="18" x2="44" y2="12"/>
+            </svg>
+            <small>Trimming</small>
+          </div>
+        </div>
+        <div class="ghero__circle-img" data-slide="2">
+          <div class="ghero__circle-placeholder">
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" opacity="0.4">
+              <circle cx="32" cy="40" r="14"/><path d="M32 26V8"/><path d="M26 14l6-6 6 6"/>
+              <line x1="24" y1="36" x2="40" y2="44"/><line x1="24" y1="44" x2="40" y2="36"/>
+            </svg>
+            <small>Removal</small>
+          </div>
+        </div>
+      </div>
+
+      <p class="ghero__sub">Whatever your property needs, get peace of mind with fully insured, ISA Certified tree care.</p>
+      <div class="ghero__cta-row">
+        <a href="#estimate" class="btn btn--large btn--primary">
+          Get My Free Estimate
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+15551234567" class="btn btn--large btn--outline ghero__outline-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call Now
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- HERO (ORIGINAL)                                    -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <header class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__gradient"></div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Trusted by 1,200+ Local Homeowners
+      </div>
+      <h1 class="hero__title">
+        Your Trees Deserve<br>
+        <span class="hero__title-accent">Better Care.</span>
+      </h1>
+      <p class="hero__sub">
+        Expert tree removal, precision trimming, and 24/7 emergency service —
+        backed by 5-star reviews and fully insured crews.
+      </p>
+      <div class="hero__cta-row">
+        <a href="#estimate" class="btn btn--large btn--primary">
+          Get My Free Estimate
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+15551234567" class="btn btn--large btn--outline">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call Now
+        </a>
+      </div>
+      <div class="hero__trust">
+        <div class="hero__trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Fully Insured
+        </div>
+        <div class="hero__trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          ISA Certified
+        </div>
+        <div class="hero__trust-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          24/7 Emergency
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Scroll to explore</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- SOCIAL PROOF BAR                                   -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="proof-bar">
+    <div class="container">
+      <div class="proof-bar__grid">
+        <div class="proof-bar__stat">
+          <span class="proof-bar__number" data-count="1200">0</span><span class="proof-bar__plus">+</span>
+          <span class="proof-bar__label">Trees Serviced</span>
+        </div>
+        <div class="proof-bar__divider"></div>
+        <div class="proof-bar__stat">
+          <span class="proof-bar__number" data-count="4.9">0</span>
+          <span class="proof-bar__label">Google Rating</span>
+          <div class="proof-bar__stars">★★★★★</div>
+        </div>
+        <div class="proof-bar__divider"></div>
+        <div class="proof-bar__stat">
+          <span class="proof-bar__number" data-count="15">0</span><span class="proof-bar__plus">+</span>
+          <span class="proof-bar__label">Years Experience</span>
+        </div>
+        <div class="proof-bar__divider"></div>
+        <div class="proof-bar__stat">
+          <span class="proof-bar__number" data-count="100">0</span><span class="proof-bar__percent">%</span>
+          <span class="proof-bar__label">Satisfaction Rate</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- BEFORE & AFTER — THE SHOWPIECE                     -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="before-after" id="work">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-header__tag">Our Work</span>
+        <h2 class="section-header__title">See the<br><span class="text-accent">Transformation.</span></h2>
+        <p class="section-header__sub">Real projects from real Happy Tree Guys customers — the results speak for themselves.</p>
+      </div>
+
+      <!-- Image Carousel -->
+      <div class="ba-carousel" data-carousel>
+        <div class="ba-carousel__track">
+          <!-- Slide 1 — Tree Removal -->
+          <div class="ba-carousel__slide ba-carousel__slide--active">
+            <div class="ba-carousel__image-wrap">
+              <!-- Replace src with your composite before/after image -->
+              <div class="ba-carousel__placeholder" style="background: linear-gradient(135deg, #1d1d1f 0%, #333336 40%, #f5f5f7 40.5%, #e8e8ed 100%);">
+                <div class="ba-carousel__placeholder-left">
+                  <span class="ba-carousel__placeholder-label">Before</span>
+                </div>
+                <div class="ba-carousel__placeholder-right">
+                  <span class="ba-carousel__placeholder-label">After</span>
+                </div>
+                <small class="ba-carousel__placeholder-hint">Replace with your composite before/after image</small>
+              </div>
+              <!-- When you have real images, use: <img src="images/project-1.jpg" alt="Tree removal before and after — Riverside Drive" class="ba-carousel__img"> -->
+            </div>
+            <div class="ba-carousel__info">
+              <h3>Dangerous Oak Removal — Riverside Drive</h3>
+              <p>This 80-foot oak was leaning toward the homeowner's roof after storm damage weakened its root system. Our crew safely removed it in sections using crane-assisted rigging, leaving the yard clean and ready for new landscaping.</p>
+              <div class="ba-carousel__meta">
+                <span><strong>Time:</strong> 1 day</span>
+                <span><strong>Crew:</strong> 4-person team</span>
+                <span><strong>Method:</strong> Crane-assisted</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 — Trimming -->
+          <div class="ba-carousel__slide">
+            <div class="ba-carousel__image-wrap">
+              <div class="ba-carousel__placeholder" style="background: linear-gradient(135deg, #1d1d1f 0%, #333336 40%, #f5f5f7 40.5%, #e8e8ed 100%);">
+                <div class="ba-carousel__placeholder-left">
+                  <span class="ba-carousel__placeholder-label">Before</span>
+                </div>
+                <div class="ba-carousel__placeholder-right">
+                  <span class="ba-carousel__placeholder-label">After</span>
+                </div>
+                <small class="ba-carousel__placeholder-hint">Replace with your composite before/after image</small>
+              </div>
+            </div>
+            <div class="ba-carousel__info">
+              <h3>Canopy Thinning & Shaping — Oak Park Neighborhood</h3>
+              <p>These mature maples hadn't been trimmed in years. We performed crown thinning to restore airflow and light penetration while shaping the canopy to complement the home's architecture. The homeowners were thrilled with the curb appeal boost.</p>
+              <div class="ba-carousel__meta">
+                <span><strong>Time:</strong> Half day</span>
+                <span><strong>Crew:</strong> 3-person team</span>
+                <span><strong>Method:</strong> Climbing & bucket truck</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 — Storm Cleanup -->
+          <div class="ba-carousel__slide">
+            <div class="ba-carousel__image-wrap">
+              <div class="ba-carousel__placeholder" style="background: linear-gradient(135deg, #1d1d1f 0%, #333336 40%, #f5f5f7 40.5%, #e8e8ed 100%);">
+                <div class="ba-carousel__placeholder-left">
+                  <span class="ba-carousel__placeholder-label">Before</span>
+                </div>
+                <div class="ba-carousel__placeholder-right">
+                  <span class="ba-carousel__placeholder-label">After</span>
+                </div>
+                <small class="ba-carousel__placeholder-hint">Replace with your composite before/after image</small>
+              </div>
+            </div>
+            <div class="ba-carousel__info">
+              <h3>Emergency Storm Response — Elm Street</h3>
+              <p>After a severe thunderstorm brought down a massive elm across this homeowner's driveway and fence, our emergency crew arrived within 2 hours. We cleared the tree, repaired the fence line, and hauled away all debris by the next morning.</p>
+              <div class="ba-carousel__meta">
+                <span><strong>Time:</strong> Same-day response</span>
+                <span><strong>Crew:</strong> 5-person team</span>
+                <span><strong>Method:</strong> Emergency protocol</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 — Stump Grinding -->
+          <div class="ba-carousel__slide">
+            <div class="ba-carousel__image-wrap">
+              <div class="ba-carousel__placeholder" style="background: linear-gradient(135deg, #1d1d1f 0%, #333336 40%, #f5f5f7 40.5%, #e8e8ed 100%);">
+                <div class="ba-carousel__placeholder-left">
+                  <span class="ba-carousel__placeholder-label">Before</span>
+                </div>
+                <div class="ba-carousel__placeholder-right">
+                  <span class="ba-carousel__placeholder-label">After</span>
+                </div>
+                <small class="ba-carousel__placeholder-hint">Replace with your composite before/after image</small>
+              </div>
+            </div>
+            <div class="ba-carousel__info">
+              <h3>Stump Removal & Grade — Willow Creek Subdivision</h3>
+              <p>Three old pine stumps were taking up valuable yard space and attracting termites. We ground each stump 8 inches below grade, treated the root zones, and filled with topsoil — ready for the homeowner's new patio project.</p>
+              <div class="ba-carousel__meta">
+                <span><strong>Time:</strong> 3 hours</span>
+                <span><strong>Crew:</strong> 2-person team</span>
+                <span><strong>Method:</strong> Commercial grinder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="ba-carousel__arrow ba-carousel__arrow--prev" data-carousel-prev aria-label="Previous project">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+        </button>
+        <button class="ba-carousel__arrow ba-carousel__arrow--next" data-carousel-next aria-label="Next project">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 6 15 12 9 18"/>
+          </svg>
+        </button>
+
+        <!-- Dots -->
+        <div class="ba-carousel__dots">
+          <button class="ba-carousel__dot ba-carousel__dot--active" data-dot="0" aria-label="Project 1"></button>
+          <button class="ba-carousel__dot" data-dot="1" aria-label="Project 2"></button>
+          <button class="ba-carousel__dot" data-dot="2" aria-label="Project 3"></button>
+          <button class="ba-carousel__dot" data-dot="3" aria-label="Project 4"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- SERVICES                                           -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__tag">What We Do</span>
+        <h2 class="section-header__title">Expert Tree Care,<br><span class="text-accent">Every Branch of It.</span></h2>
+        <p class="section-header__sub">From precision trimming to full removals, we handle every job with care, safety, and clean results.</p>
+      </div>
+      <div class="services__grid">
+
+        <article class="service-card" data-aos="fade-up">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M32 56V32"/>
+              <path d="M20 32l12-20 12 20H20z"/>
+              <path d="M16 44l16-28 16 28H16z"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Tree Removal</h3>
+          <p class="service-card__text">
+            Safe, efficient removal of dangerous, dead, or unwanted trees. We handle everything — from small backyard trees to massive oaks near structures. Crane-assisted removal available for tight-access properties.
+          </p>
+          <ul class="service-card__details">
+            <li>Hazardous tree assessment</li>
+            <li>Crane-assisted removal</li>
+            <li>Complete debris cleanup</li>
+          </ul>
+          <a href="#estimate" class="service-card__link">Get a Free Quote →</a>
+        </article>
+
+        <article class="service-card service-card--featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card__badge">Most Requested</div>
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M32 56V28"/>
+              <path d="M22 28c0-12 10-20 10-20s10 8 10 20"/>
+              <path d="M18 38c-4-2-6-6-6-10"/>
+              <path d="M46 38c4-2 6-6 6-10"/>
+              <line x1="26" y1="18" x2="20" y2="12"/>
+              <line x1="38" y1="18" x2="44" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Tree Trimming & Pruning</h3>
+          <p class="service-card__text">
+            Precision trimming that enhances your trees' health, shape, and safety. We follow ISA pruning standards to protect your trees while improving curb appeal and letting light through.
+          </p>
+          <ul class="service-card__details">
+            <li>Crown thinning & shaping</li>
+            <li>Deadwood removal</li>
+            <li>Clearance pruning</li>
+          </ul>
+          <a href="#estimate" class="service-card__link">Get a Free Quote →</a>
+        </article>
+
+        <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="32" cy="40" r="14"/>
+              <path d="M32 26V8"/>
+              <path d="M26 14l6-6 6 6"/>
+              <line x1="24" y1="36" x2="40" y2="44"/>
+              <line x1="24" y1="44" x2="40" y2="36"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Stump Grinding</h3>
+          <p class="service-card__text">
+            Eliminate tripping hazards and reclaim your yard. Our commercial-grade stump grinders remove stumps below ground level, ready for sod, landscaping, or whatever you have planned.
+          </p>
+          <ul class="service-card__details">
+            <li>Below-grade grinding</li>
+            <li>Root system treatment</li>
+            <li>Fill & grade included</li>
+          </ul>
+          <a href="#estimate" class="service-card__link">Get a Free Quote →</a>
+        </article>
+
+        <article class="service-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 52l10-20"/>
+              <path d="M52 52l-10-20"/>
+              <path d="M22 32c0-14 10-24 10-24s10 10 10 24"/>
+              <path d="M8 56h48"/>
+              <circle cx="32" cy="36" r="4"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Emergency Storm Damage</h3>
+          <p class="service-card__text">
+            When storms strike, we respond fast. Our 24/7 emergency crews clear fallen trees from homes, driveways, and power lines — safely and quickly so you can start recovering.
+          </p>
+          <ul class="service-card__details">
+            <li>24/7 rapid response</li>
+            <li>Insurance claim assistance</li>
+            <li>Priority scheduling</li>
+          </ul>
+          <a href="tel:+15551234567" class="service-card__link">Call 24/7 Emergency Line →</a>
+        </article>
+
+        <article class="service-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M32 56V36"/>
+              <path d="M20 36h24"/>
+              <circle cx="32" cy="24" r="12"/>
+              <path d="M28 20c2-2 6-2 8 0"/>
+              <path d="M26 28c3 3 9 3 12 0"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Tree Health & Diagnosis</h3>
+          <p class="service-card__text">
+            Concerned about a tree on your property? Our ISA Certified Arborists assess tree health, diagnose disease, and recommend treatment plans to save valuable trees before it's too late.
+          </p>
+          <ul class="service-card__details">
+            <li>Disease identification</li>
+            <li>Pest management</li>
+            <li>Treatment programs</li>
+          </ul>
+          <a href="#estimate" class="service-card__link">Schedule Assessment →</a>
+        </article>
+
+        <article class="service-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="12" y="40" width="40" height="16" rx="2"/>
+              <path d="M20 40V28"/>
+              <path d="M32 40V20"/>
+              <path d="M44 40V24"/>
+              <circle cx="20" cy="24" r="4"/>
+              <circle cx="32" cy="16" r="4"/>
+              <circle cx="44" cy="20" r="4"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Lot & Land Clearing</h3>
+          <p class="service-card__text">
+            Preparing for construction, landscaping, or a cleaner property line? We clear brush, trees, and undergrowth efficiently. Selective clearing available to preserve the trees you want to keep.
+          </p>
+          <ul class="service-card__details">
+            <li>Selective or full clearing</li>
+            <li>Brush & debris removal</li>
+            <li>Grading preparation</li>
+          </ul>
+          <a href="#estimate" class="service-card__link">Get a Free Quote →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- WHY CHOOSE US                                      -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="why-us" id="about">
+    <div class="container">
+      <div class="why-us__layout">
+        <div class="why-us__content">
+          <span class="section-header__tag">Why Happy Tree Guys</span>
+          <h2 class="section-header__title">Not All Tree Services<br><span class="text-accent">Are Created Equal.</span></h2>
+          <p class="why-us__text">
+            We're not a fly-by-night crew with a chainsaw and a pickup truck. Happy Tree Guys is a fully licensed, insured, and ISA Certified team that treats your property like our own.
+          </p>
+          <div class="why-us__features">
+            <div class="why-us__feature">
+              <div class="why-us__feature-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              </div>
+              <div>
+                <h4>$2M Liability Insurance</h4>
+                <p>Full coverage protects your property and gives you peace of mind on every job.</p>
+              </div>
+            </div>
+            <div class="why-us__feature">
+              <div class="why-us__feature-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+              </div>
+              <div>
+                <h4>ISA Certified Arborists</h4>
+                <p>Our lead arborists hold International Society of Arboriculture certifications.</p>
+              </div>
+            </div>
+            <div class="why-us__feature">
+              <div class="why-us__feature-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              </div>
+              <div>
+                <h4>Clean Site Guarantee</h4>
+                <p>We leave your property cleaner than we found it. Every branch, every chip — gone.</p>
+              </div>
+            </div>
+            <div class="why-us__feature">
+              <div class="why-us__feature-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
+              <div>
+                <h4>Written Estimates, No Surprises</h4>
+                <p>Transparent pricing up front. The quote you get is the price you pay.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-us__visual">
+          <div class="why-us__image-stack">
+            <div class="why-us__image why-us__image--1" style="background: linear-gradient(135deg, #2c2c2e 0%, #3a3a3c 100%);">
+              <div class="ba-slider__placeholder" style="color: white;">
+                <span>Team Photo</span>
+                <small>Add your crew photo here</small>
+              </div>
+            </div>
+            <div class="why-us__image why-us__image--2" style="background: linear-gradient(135deg, #1d1d1f 0%, #333336 100%);">
+              <div class="ba-slider__placeholder" style="color: white;">
+                <span>Equipment / Action Shot</span>
+                <small>Add a work-in-progress photo</small>
+              </div>
+            </div>
+            <div class="why-us__experience-badge">
+              <span class="why-us__experience-number">15+</span>
+              <span class="why-us__experience-text">Years of<br>Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- GOOGLE REVIEWS                                     -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__tag">Real Reviews</span>
+        <h2 class="section-header__title">Don't Take Our Word For It.<br><span class="text-accent">Hear From Our Neighbors.</span></h2>
+        <div class="reviews__google-badge">
+          <svg width="24" height="24" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          <div>
+            <strong>4.9</strong> out of 5 &nbsp;·&nbsp; 200+ Reviews on Google
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__grid">
+        <article class="review-card" data-aos="fade-up">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"The Happy Tree Guys crew took down a massive dead oak that was leaning over my garage. They were professional, careful, and left my yard looking better than before. I couldn't believe how fast and clean the job was. Highly recommend!"</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">MJ</div>
+            <div>
+              <strong>Mike Johnson</strong>
+              <span class="review-card__date">2 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-card__google">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Posted on Google
+          </div>
+        </article>
+
+        <article class="review-card review-card--featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"We had three huge pine trees trimmed and they look absolutely incredible. The crew was on time, super friendly, and explained everything they were doing. Best part? They cleaned up every single needle. Our neighbors couldn't believe the transformation!"</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">SR</div>
+            <div>
+              <strong>Sarah Reynolds</strong>
+              <span class="review-card__date">1 month ago</span>
+            </div>
+          </div>
+          <div class="review-card__google">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Posted on Google
+          </div>
+        </article>
+
+        <article class="review-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"Emergency call at 10pm after a storm dropped a tree on our fence. Happy Tree Guys answered immediately and had a crew here by morning. They handled our insurance claim paperwork too. These guys are the real deal — true professionals."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">DW</div>
+            <div>
+              <strong>David Williams</strong>
+              <span class="review-card__date">3 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-card__google">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Posted on Google
+          </div>
+        </article>
+
+        <article class="review-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"Got quotes from four tree services. Happy Tree Guys was the most thorough in their estimate and the most reasonable in price. They showed up when they said they would and did exactly what they promised. No hidden fees, no surprises."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">LP</div>
+            <div>
+              <strong>Lisa Park</strong>
+              <span class="review-card__date">1 month ago</span>
+            </div>
+          </div>
+          <div class="review-card__google">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Posted on Google
+          </div>
+        </article>
+
+        <article class="review-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"I was nervous about removing a big elm near our power lines. The arborist came out, walked me through the plan, and the crew executed it flawlessly. They even saved a bird nest and relocated it! That's the kind of people they are."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">CT</div>
+            <div>
+              <strong>Carol Thompson</strong>
+              <span class="review-card__date">2 months ago</span>
+            </div>
+          </div>
+          <div class="review-card__google">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Posted on Google
+          </div>
+        </article>
+
+        <article class="review-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">"Had five stumps ground down and the yard looks amazing. They went below grade so I could put sod right over the spots. Fair price, hard workers, and genuinely nice guys. Already referred them to three of my neighbors."</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">RB</div>
+            <div>
+              <strong>Robert Baker</strong>
+              <span class="review-card__date">6 weeks ago</span>
+            </div>
+          </div>
+          <div class="review-card__google">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Posted on Google
+          </div>
+        </article>
+      </div>
+
+      <div class="reviews__cta">
+        <a href="#" class="btn btn--outline" target="_blank" rel="noopener">Read All Reviews on Google →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- PROCESS                                            -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__tag">How It Works</span>
+        <h2 class="section-header__title">From Call to Clean-Up<br><span class="text-accent">in 4 Simple Steps.</span></h2>
+      </div>
+      <div class="process__grid">
+        <div class="process__step">
+          <div class="process__number">01</div>
+          <h3>Call or Request Online</h3>
+          <p>Reach out by phone or fill out our quick estimate form. We'll respond within 1 business hour.</p>
+        </div>
+        <div class="process__connector"></div>
+        <div class="process__step">
+          <div class="process__number">02</div>
+          <h3>Free On-Site Estimate</h3>
+          <p>A certified arborist visits your property, assesses the job, and provides a clear, written quote — no obligation.</p>
+        </div>
+        <div class="process__connector"></div>
+        <div class="process__step">
+          <div class="process__number">03</div>
+          <h3>Scheduled Service</h3>
+          <p>We arrive on time with the right crew and equipment. You'll know exactly who's coming and when.</p>
+        </div>
+        <div class="process__connector"></div>
+        <div class="process__step">
+          <div class="process__number">04</div>
+          <h3>Spotless Clean-Up</h3>
+          <p>We haul away every branch, chip, and leaf. Your property is left cleaner than we found it. Guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- FAQ (SEO CONTENT)                                  -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq__layout">
+        <div class="faq__header">
+          <span class="section-header__tag">Common Questions</span>
+          <h2 class="section-header__title">Got Questions?<br><span class="text-accent">We've Got Answers.</span></h2>
+          <p class="faq__header-sub">Can't find what you're looking for? Give us a call — we're happy to help.</p>
+          <a href="tel:+15551234567" class="btn btn--primary">Call Us</a>
+        </div>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary class="faq__question">
+              How much does tree removal cost?
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>Tree removal costs vary based on the tree's size, location, and complexity. A small tree (under 25 feet) may cost $300–$500, while large trees near structures can range from $1,000–$3,000+. Crane-assisted removals for extremely large or hazardous trees may be higher. We provide free, no-obligation on-site estimates so you know exactly what to expect — no hidden fees, ever.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              Are you licensed and insured?
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>Absolutely. Happy Tree Guys carries $2 million in general liability insurance and full workers' compensation coverage. Our lead arborists are ISA Certified (International Society of Arboriculture). We're happy to provide proof of insurance upon request — and we recommend asking any tree service you consider for the same.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              Do I need a permit to remove a tree?
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>Permit requirements vary by city and county. Some municipalities require permits for trees above a certain diameter, especially heritage or protected species. Our team knows local regulations and will advise you on permit requirements during your free estimate. In many cases, we'll handle the permit process for you.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              How long does tree removal take?
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>Most residential tree removals are completed in a single day. Small to medium trees typically take 2–4 hours, while large or complex removals may take a full day. Crane-assisted jobs involving multiple trees can occasionally span two days. We'll give you a clear timeline during your estimate so you can plan accordingly.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              What happens to the wood and debris?
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>We haul away all debris as part of every job — branches, logs, and wood chips are all removed. If you'd like to keep the firewood, just let us know and we'll cut it to length and stack it for you. Wood chips from our chipping process are available for mulch if you'd like them for your garden beds.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              Do you offer emergency tree service?
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>Yes — we provide 24/7 emergency storm damage response. When severe weather hits, our emergency crews mobilize immediately. We prioritize situations involving trees on homes, blocking driveways, or near power lines. Call our emergency line anytime and you'll reach a real person, not a voicemail.</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary class="faq__question">
+              Will tree removal damage my lawn or landscaping?
+              <span class="faq__icon">+</span>
+            </summary>
+            <div class="faq__answer">
+              <p>We take great care to protect your property. Our crews use ground protection mats for heavy equipment, carefully rig limbs to avoid dropping them on gardens or structures, and clean up thoroughly. In the rare case that lawn damage occurs from equipment, we'll discuss repair options with you before we start.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- FINAL CTA                                          -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="final-cta" id="estimate">
+    <div class="container">
+      <div class="final-cta__layout">
+        <div class="final-cta__content">
+          <h2 class="final-cta__title">Ready to Transform<br>Your Property?</h2>
+          <p class="final-cta__sub">Get a free, no-obligation estimate from an ISA Certified Arborist. Most quotes delivered within 24 hours.</p>
+          <div class="final-cta__perks">
+            <div class="final-cta__perk">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              100% Free Estimate
+            </div>
+            <div class="final-cta__perk">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              No Obligation
+            </div>
+            <div class="final-cta__perk">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Response Within 1 Hour
+            </div>
+          </div>
+        </div>
+        <form class="final-cta__form" onsubmit="event.preventDefault(); alert('Thank you! We\'ll be in touch within 1 hour.');">
+          <h3 class="final-cta__form-title">Get My Free Estimate</h3>
+          <div class="final-cta__form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="final-cta__form-row">
+            <div class="final-cta__form-group">
+              <input type="tel" placeholder="Phone Number" required>
+            </div>
+            <div class="final-cta__form-group">
+              <input type="email" placeholder="Email (optional)">
+            </div>
+          </div>
+          <div class="final-cta__form-group">
+            <select required>
+              <option value="" disabled selected>What do you need?</option>
+              <option>Tree Removal</option>
+              <option>Tree Trimming / Pruning</option>
+              <option>Stump Grinding</option>
+              <option>Emergency / Storm Damage</option>
+              <option>Tree Health Assessment</option>
+              <option>Land / Lot Clearing</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="final-cta__form-group">
+            <textarea placeholder="Tell us about your project (optional)" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            Send My Free Estimate Request
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p class="final-cta__form-note">We respect your privacy. No spam, ever.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- EMERGENCY BANNER                                   -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <section class="emergency-banner">
+    <div class="container">
+      <div class="emergency-banner__inner">
+        <div class="emergency-banner__icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <div>
+          <strong>Tree Emergency?</strong> Storm damage, fallen trees, hazardous limbs — call our 24/7 line now.
+        </div>
+        <a href="tel:+15551234567" class="btn btn--emergency">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          (555) 123-4567
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- FOOTER                                             -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="nav__logo">
+            <span class="nav__logo-icon">🌳</span>
+            <span class="nav__logo-text">Happy Tree Guys</span>
+          </div>
+          <p class="footer__tagline">Professional tree care you can trust. Locally owned, fully insured, and committed to leaving your property better than we found it.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Tree Removal</a></li>
+            <li><a href="#">Tree Trimming</a></li>
+            <li><a href="#">Stump Grinding</a></li>
+            <li><a href="#">Emergency Service</a></li>
+            <li><a href="#">Tree Health</a></li>
+            <li><a href="#">Land Clearing</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Service Areas</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4>Get In Touch</h4>
+          <ul>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <a href="tel:+15551234567">(555) 123-4567</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:hello@happytreeguys.com">hello@happytreeguys.com</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Serving the Greater Metro Area
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Happy Tree Guys. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile CTA Bar -->
+  <div class="mobile-cta">
+    <a href="tel:+15551234567" class="mobile-cta__call">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Call Now
+    </a>
+    <a href="#estimate" class="mobile-cta__estimate">Free Estimate</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
