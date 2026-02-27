@@ -1706,6 +1706,17 @@ ul { list-style: none; }
   text-align: center;
 }
 
+/* H1 — visible, keyword-targeted */
+.ghero__h1 {
+  font-family: var(--ff-heading);
+  font-size: clamp(0.875rem, 1.2vw, 1.05rem);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--clr-gray-500);
+  margin-bottom: var(--sp-4);
+}
+
 /* Headline layout */
 .ghero__headline {
   font-family: var(--ff-heading);
