@@ -290,7 +290,7 @@ ul { list-style: none; }
   gap: var(--sp-2);
   font-weight: 800;
   font-size: var(--fs-lg);
-  color: var(--clr-white);
+  color: var(--clr-gray-900);
   transition: color var(--dur-normal) var(--ease-out);
 }
 .nav--scrolled .nav__logo { color: var(--clr-forest-deep); }
@@ -305,7 +305,7 @@ ul { list-style: none; }
 .nav__links a {
   font-size: var(--fs-sm);
   font-weight: 500;
-  color: rgba(255,255,255,0.85);
+  color: var(--clr-gray-600);
   transition: color var(--dur-fast);
   position: relative;
 }
@@ -335,11 +335,11 @@ ul { list-style: none; }
   gap: var(--sp-2);
   font-weight: 600;
   font-size: var(--fs-sm);
-  color: rgba(255,255,255,0.9);
+  color: var(--clr-gray-900);
   transition: color var(--dur-fast);
 }
 .nav--scrolled .nav__phone { color: var(--clr-gray-900); }
-.nav__phone:hover { color: rgba(255,255,255,0.7); }
+.nav__phone:hover { color: var(--clr-gray-600); }
 
 .nav__btn {
   padding: var(--sp-2) var(--sp-5);
@@ -358,7 +358,7 @@ ul { list-style: none; }
 .nav__hamburger span {
   width: 24px;
   height: 2px;
-  background: var(--clr-white);
+  background: var(--clr-gray-900);
   transition: all var(--dur-normal) var(--ease-out);
 }
 .nav--scrolled .nav__hamburger span { background: var(--clr-forest-deep); }
@@ -1709,12 +1709,12 @@ ul { list-style: none; }
 /* H1 — visible, keyword-targeted */
 .ghero__h1 {
   font-family: var(--ff-heading);
-  font-size: clamp(0.875rem, 1.2vw, 1.05rem);
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--clr-gray-500);
-  margin-bottom: var(--sp-4);
+  margin-bottom: var(--sp-6);
 }
 
 /* Headline layout */
