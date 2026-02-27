@@ -124,6 +124,7 @@ ul { list-style: none; }
   max-width: var(--container);
   margin: 0 auto;
   padding: 0 var(--sp-6);
+  overflow: hidden;
 }
 
 .text-accent {
@@ -1332,6 +1333,7 @@ ul { list-style: none; }
   background:
     linear-gradient(160deg, #0a0a0a 0%, #1d1d1f 50%, #2c2c2e 100%);
   position: relative;
+  overflow: hidden;
 }
 
 .final-cta::before {
@@ -1944,6 +1946,7 @@ ul { list-style: none; }
 
   .final-cta__form {
     max-width: 100%;
+    box-sizing: border-box;
   }
 
   .footer__grid {
@@ -2065,6 +2068,18 @@ ul { list-style: none; }
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
     border-top: 6px solid var(--clr-gray-300);
+  }
+
+  .final-cta__form {
+    padding: var(--sp-5);
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .final-cta__form input,
+  .final-cta__form select,
+  .final-cta__form textarea {
+    min-width: 0;
   }
 
   .final-cta__form-row {
