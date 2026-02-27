@@ -1486,7 +1486,7 @@ ul { list-style: none; }
 
 .footer__grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.2fr;
   gap: var(--sp-10);
   margin-bottom: var(--sp-12);
 }
