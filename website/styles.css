@@ -1343,7 +1343,7 @@ ul { list-style: none; }
 
 .final-cta__layout {
   display: grid;
-  grid-template-columns: 1fr 480px;
+  grid-template-columns: 1fr minmax(0, 480px);
   gap: var(--sp-16);
   align-items: center;
   position: relative;
@@ -1363,6 +1363,7 @@ ul { list-style: none; }
   font-size: var(--fs-lg);
   color: rgba(255,255,255,0.7);
   margin-bottom: var(--sp-8);
+  max-width: 540px;
 }
 
 .final-cta__perks {
@@ -1934,10 +1935,15 @@ ul { list-style: none; }
   .final-cta__layout {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: var(--sp-10);
   }
 
   .final-cta__perks {
     align-items: center;
+  }
+
+  .final-cta__form {
+    max-width: 100%;
   }
 
   .footer__grid {
